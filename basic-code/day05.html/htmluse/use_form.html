@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+    <style>
+        div p{
+            color: cyan;
+        }
+    </style>
+</head>
+<body>
+<!--form代表了数据收集的范围
+        属性：
+            1.action，数据提交的URL
+            2.method，提交方式，共七种，常用两种
+            *get，请求地址栏有参数，请求参数长度有限制
+            post，参数存在请求体中，更加安全
+            3.表单数据要提交必须规定其name属性
+            4.file文件属性-->
+
+<form action="#" method="get">
+    <label for="usename">用户名</label>:<input type="text" name="usename" placeholder="请输入用户名" id="usename"><br/>
+    <label for="password">密码</label>:<input type="password" name="password" placeholder="请输入密码" id="password"><br/>
+    <input type="submit" value="登录"><br>
+    <input type="radio" name="gender" value="male">男<br/>
+    <input type="radio" name="gender" value="fmale">女<br/>
+    图片：<input type="file" name="picture"><br>
+    隐藏域：<input type="hidden" name="id" value="aaaa"><br/>
+
+    取色器：<input type="color" name="color"><br/>
+    生日：<input type="date" name="birthday"><br/>
+    生日：<input type="datetime-local" name="birthday"><br>
+    年龄:<input type="number" name="age"><br>
+    省份：<select name="province">
+            <option value="1">北京</option>
+            <option value="2">浙江</option>
+            <option value="3">上海</option>
+          </select><br>
+    自我描述：<textarea cols="20" rows="5" name="self-decribe"></textarea>
+    <div>
+        <p>葛旭<p>
+    </div>
+    <p>张煜</p>
+</form>
+</body>
+</html>

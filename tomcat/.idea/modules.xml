@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/day11_text/day11_text.iml" filepath="$PROJECT_DIR$/day11_text/day11_text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day12_text/day12_text.iml" filepath="$PROJECT_DIR$/day12_text/day12_text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day14_text/day14_text.iml" filepath="$PROJECT_DIR$/day14_text/day14_text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day15_text/day15_text.iml" filepath="$PROJECT_DIR$/day15_text/day15_text.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day17_case/day17_case.iml" filepath="$PROJECT_DIR$/day17_case/day17_case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day18_case/day18_case.iml" filepath="$PROJECT_DIR$/day18_case/day18_case.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usetomcat/day_11servlet.iml" filepath="$PROJECT_DIR$/usetomcat/day_11servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day_13servlet/day_13servlet.iml" filepath="$PROJECT_DIR$/day_13servlet/day_13servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jedisuse/jedisuse.iml" filepath="$PROJECT_DIR$/jedisuse/jedisuse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jspuse/jspuse.iml" filepath="$PROJECT_DIR$/jspuse/jspuse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../travel/travel.iml" filepath="$PROJECT_DIR$/../travel/travel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/usetomcat/usetomcat.iml" filepath="$PROJECT_DIR$/usetomcat/usetomcat.iml" />
+    </modules>
+  </component>
+</project>

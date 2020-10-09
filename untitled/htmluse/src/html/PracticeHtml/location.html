@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location</title>
+</head>
+<body>
+<input type="button" id="bth" value="刷新">
+<input type="button" id="baidu" value="百度">
+
+<script>
+    //1.获取按钮
+    var id = document.getElementById("bth");
+    //2.绑定单击事件
+    id.onclick=function () {
+        location.reload;
+        //3.刷新
+    }
+
+
+    /*var href = location.href;
+    document.write(href);*/
+    //1.获取按钮
+    var baidu = document.getElementById("baidu");
+    //2.绑定单击事件
+    baidu.onclick=function () {
+        //3.访问百度
+        location.href="https://www.baidu.com";
+
+    }
+
+</script>
+</body>
+</html>

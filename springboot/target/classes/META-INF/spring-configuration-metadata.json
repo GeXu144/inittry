@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "person",
+      "type": "com.itheima.springbootuse.domain.Person",
+      "sourceType": "com.itheima.springbootuse.domain.Person"
+    }
+  ],
+  "properties": [
+    {
+      "name": "person.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.itheima.springbootuse.domain.Person"
+    },
+    {
+      "name": "person.birth",
+      "type": "java.util.Date",
+      "sourceType": "com.itheima.springbootuse.domain.Person"
+    },
+    {
+      "name": "person.name",
+      "type": "java.lang.String",
+      "sourceType": "com.itheima.springbootuse.domain.Person"
+    }
+  ],
+  "hints": []
+}

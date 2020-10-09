@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态表格</title>
+    <style>
+        table{
+            border: 1px solid;
+            margin: auto;
+            width: 500px;
+        }
+        td,th{
+            text-align: center;
+            border: 1px solid;
+        }
+        div{
+            text-align: center;
+            border: 50px ;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="text" id="id" placeholder="请输入编号">
+    <input type="text" id="name" placeholder="请输入姓名">
+    <input type="text" id="age" placeholder="请输入年龄">
+    <input type="button" value="添加" id="bt_add">
+</div>
+<table id="dy_table" border="1" cellspacing="0" width="50%" >
+    <caption>学生信息表</caption>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+        <th>action</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>葛旭</td>
+        <td>22</td>
+        <td><a href="Javascript:void(0)" onclick="delTr(this)">删除</a></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>李雅琪</td>
+        <td>20</td>
+        <td><a href="Javascript:void(0)" onclick="delTr(this)">删除</a></td>
+    </tr>
+</table>
+<script>
+    //1.获取按钮
+    /*document.getElementById("bt_add").onclick=function () {
+        //2.获取文本框内容
+        var id = document.getElementById("id").value;
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        //3.创建td,赋值td
+        var td_id = document.createElement("td");//创建td标签体
+        var text_id = document.createTextNode(id);
+        td_id.appendChild(text_id);//对标签体赋值
+
+        var td_name = document.createElement("td");//创建td标签体
+        var text_name = document.createTextNode(name);
+        td_name.appendChild(text_name);//对标签体赋值
+
+        var td_age = document.createElement("td");//创建td标签体
+        var text_age = document.createTextNode(age);
+        td_age.appendChild(text_age);//对标签体赋值
+
+        var td_a = document.createElement("td");
+        var ela_a = document.createElement("a");
+        ela_a.setAttribute("href","Javascript:void(0)");//设置超链接属性
+        ela_a.setAttribute("onclick","delTr(this)");//设置删除属性
+        var text_ac = document.createTextNode("删除");
+        ela_a.appendChild(text_ac);
+        td_a.appendChild(ela_a);
+        //4.创建tr标签体，将td套入tr中
+        var tr = document.createElement("tr");
+        tr.appendChild(td_id);
+        tr.appendChild(td_name);
+        tr.appendChild(td_age);
+        tr.appendChild(td_a);
+        //5.获取table，将tr放入table中
+        var table = document.getElementsByTagName("table")[0];
+        table.appendChild(tr);
+    }*/
+    document.getElementById("bt_add").onclick=function () {
+        //2.获取文本框内容
+        var id = document.getElementById("id").value;
+        var name = document.getElementById("name").value;
+        var age = document.getElementById("age").value;
+        //3.使用innerHTML，追加一行
+        var table = document.getElementsByTagName("table")[0];
+        table.innerHTML += "<tr>\n" +
+            "        <td>" + id + "</td>\n" +
+            "        <td>" + name + "</td>\n" +
+            "        <td>" + age + "</td>\n" +
+            "        <td><a href=\"Javascript:void(0)\" onclick=\"delTr(this)\">删除</a></td>\n" +
+            "    </tr>";
+    }
+    function delTr(obj) {
+        var table=obj.parentNode.parentNode.parentNode;
+        var tr=obj.parentNode.parentNode;
+        //删除节点
+        table.removeChild(tr);
+    }
+</script>
+</body>
+</html>

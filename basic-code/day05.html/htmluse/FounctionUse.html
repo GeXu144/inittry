@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Function对象的运用</title>
+    <script>
+        /*求两个数的和
+        function add(a,b){
+            return a+b;
+        }
+        var sum=add(2,3);
+        alert(sum);
+        */
+        function add() {
+            var sum=0;
+            for(var i =0;i<arguments.length;i++){
+                sum+=arguments[i];//arguments是一个数组，可以解决任意个数的求和
+            }
+            return sum;
+        }
+        var m=add(2,3);
+        alert(m);
+        document.write(m);//呈现在页面
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
