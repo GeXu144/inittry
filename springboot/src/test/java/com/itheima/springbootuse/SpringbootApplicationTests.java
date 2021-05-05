@@ -1,17 +1,24 @@
 package com.itheima.springbootuse;
 
-import com.itheima.springbootuse.domain.Person;
+
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.junit.platform.commons.logging.Logger;
+import org.junit.platform.commons.logging.LoggerFactory;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SpringbootApplicationTests {
-    @Autowired
-    private Person person;
+    //记录器
+    Logger logger = LoggerFactory.getLogger(getClass());
     @Test
     void contextLoads() {
-        System.out.println(person);
+        //System.out.println(person);
+        logger.trace(()->"追踪日志");
+        logger.debug(()->"这是debug日志");
+        logger.info(()->"info日志");
+        logger.warn(()->"warn日志");
+        logger.error(()->"错误日志");
+
     }
 
 }
