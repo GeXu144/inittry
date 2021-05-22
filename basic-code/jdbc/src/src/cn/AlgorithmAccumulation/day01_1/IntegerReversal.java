@@ -24,7 +24,7 @@ public class IntegerReversal {
 
     public static void main(String[] args) {
 
-        int i = integerReversal(987456321);
+        int i = integerReversal(9856221);
         System.out.println(i);
     }
 }

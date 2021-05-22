@@ -9,7 +9,7 @@ import java.util.HashMap;
       4.创建字符缓冲流，调用write方法，写入硬盘。
 
  */
-public class BufferredProtect {
+public class BufferedProtect {
     public static void main(String[] args) throws IOException {
         HashMap<String,String> map=new HashMap<>();
         BufferedReader n=new BufferedReader(new FileReader("D:\\新建文件夹\\b.txt"));
