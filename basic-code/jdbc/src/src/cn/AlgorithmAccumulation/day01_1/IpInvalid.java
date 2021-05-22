@@ -1,7 +1,9 @@
 package src.cn.AlgorithmAccumulation.day01_1;
 
 import java.util.Scanner;
-
+/**
+    Ip无效化，将'.'换成'[.]'
+*/
 public class IpInvalid {
     public static String returnInvalidIp(String str){
         String res="";
