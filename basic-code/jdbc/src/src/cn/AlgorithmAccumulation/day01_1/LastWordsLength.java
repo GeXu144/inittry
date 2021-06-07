@@ -2,7 +2,7 @@ package src.cn.AlgorithmAccumulation.day01_1;
 
 public class LastWordsLength {
     /**
-     *
+     *返回字符串中最后一个单词的长度
      * @param str
      * @return
      */
@@ -19,7 +19,7 @@ public class LastWordsLength {
         return len;
     }
     public static void main(String[] args) {
-        String str="hello world";
+        String str="hello world and love";
         int i = lastWorldsLength(str);
         System.out.println(i);
     }
