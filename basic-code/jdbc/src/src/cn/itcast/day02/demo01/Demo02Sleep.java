@@ -4,14 +4,14 @@ package src.cn.itcast.day02.demo01;
  */
 public class Demo02Sleep {
     public static void main(String[] args) {
-        for (int i =1; i <=60 ; i++) {
-            System.out.println(i);
+        RunnableImp1 r=new RunnableImp1();
+        Thread t1=new Thread(r);
+        Thread t2=new Thread(r);
+        Thread t3=new Thread(r);
 
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
+        //开启线程
+        t1.start();
+        t2.start();
+        t3.start();
     }
 }
