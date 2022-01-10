@@ -1,5 +1,8 @@
 package src.cn.AlgorithmAccumulation.datastruct;
 
+/**
+ * LeetCode括号最大镶嵌深度----实质就是左括号的最大连续数，考虑math的max方法
+ */
 public class Solution1614 {
 
     /**
