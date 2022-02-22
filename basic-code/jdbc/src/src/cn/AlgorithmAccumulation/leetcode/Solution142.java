@@ -1,6 +1,11 @@
 package src.cn.AlgorithmAccumulation.leetcode;
 
 public class Solution142 {
+    /**
+     * 返回环中第一个结点：首先找到环，然后将slow还原到head，之后slow一步，head一步，当两者相等时就找到了第一个结点
+     * @param head
+     * @return
+     */
     public ListNode detectCycle(ListNode head){
         if (head==null){
             return null;
