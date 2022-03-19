@@ -1,15 +1,6 @@
 package src.cn.AlgorithmAccumulation.datastruct;
 
 public class QuickSort {
-
-
-    public static void main(String[] args) {
-        int[] array={1,3,2,4,4,5,7,9};
-        quickSort(array);
-        for (int i = 0; i < array.length; i++) {
-            System.out.println(i);
-        }
-    }
     public static void quickSort(int[] array){
         if (array==null||array.length-1<2){
             return;
@@ -30,27 +21,23 @@ public class QuickSort {
      * 返回一个含有两个数的数组，一个是等于区域的左边界另外一个是大于区域的右边界
      * i代表当前数
      * @param array
-     * @param i
+     * @param l
      * @param r
      * @return
      */
-    public static int[] partition(int[] array,int i,int r){
-        int less=i-1;//<的右边界,减一主要是因为第一个数需要用
+    public static int[] partition(int[] array,int l,int r){
+        int less=l-1;//<的右边界,减一主要是因为第一个数需要用
         int more=r;//>的左边界，直接r,因为最后一个数已经作为num了
-        while (i<more){
-            if (array[i]<array[r]){
+        while (l<more){
+            if (array[l]<array[r]){
                 //当前数如果小于num,将当前数和小于区域的后一个数交换
-                less=less+1;
-                swap(array,less,i);
-                i++;
-               // swap(array,++less,i++);
-            }else if (array[i]>array[r]){
-                //i>num,当前值和大于区域的前一个交换，大于区域扩大，当大于区域与i撞上时结束
-                //swap(array,--more,i);
-                more=more-1;
-                swap(array,more,i);
+                swap(array,++less,l++);
+            }else if (array[l]>array[r]){
+                //l>num,当前值和大于区域的前一个交换，大于区域扩大，当大于区域与l撞上时结束
+                swap(array,--more,l);
+            }else{
+                l++;
             }
-            i++;
         }
         //循环结束代表< = >三个区域已经压缩完成，只需要把num值换到大于区域的左边界就把等于区域全部搞定
         swap(array,more,r);
